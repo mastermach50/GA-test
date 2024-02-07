@@ -1,0 +1,9 @@
+name: ga-test-action
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  this-action-1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo test.txt
